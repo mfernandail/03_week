@@ -15,10 +15,8 @@ const motivationalPhrases = [
   "Every achievement begins with the decision to try.",
   "Don’t give up, the best is yet to come."
 ];
-document.getElementById('btn').addEventListener('click', () => {
-  console.log("click")
-
-  const paragraph =document.querySelector('.p_phrase')
+document.getElementById("btn").addEventListener("click", () => {
+  const paragraph = document.querySelector(".p_phrase")
   const randomIndex = Math.floor(Math.random() * motivationalPhrases.length)
   const randomPhrase = motivationalPhrases[randomIndex]
   paragraph.innerHTML = randomPhrase
@@ -26,7 +24,4 @@ document.getElementById('btn').addEventListener('click', () => {
   paragraph.style.fontStyle = "italic"
   paragraph.style.fontSize = "1.4rem"
   console.log(randomPhrase)
-
-
-
 })
